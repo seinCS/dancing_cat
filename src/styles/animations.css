@@ -1,0 +1,56 @@
+/* 춤추는 애니메이션 - 점프, 회전, 흔들기 조합 */
+@keyframes dance {
+  0% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  10% {
+    transform: translateY(-30px) rotate(-5deg) scale(1.05);
+  }
+  20% {
+    transform: translateY(-50px) rotate(5deg) scale(1.1);
+  }
+  30% {
+    transform: translateY(-30px) rotate(-5deg) scale(1.05);
+  }
+  40% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+  50% {
+    transform: translateY(0) rotate(10deg) scale(1.05);
+  }
+  60% {
+    transform: translateY(-20px) rotate(-10deg) scale(1.08);
+  }
+  70% {
+    transform: translateY(-40px) rotate(15deg) scale(1.1);
+  }
+  80% {
+    transform: translateY(-20px) rotate(-8deg) scale(1.05);
+  }
+  90% {
+    transform: translateY(-10px) rotate(5deg) scale(1.02);
+  }
+  100% {
+    transform: translateY(0) rotate(0deg) scale(1);
+  }
+}
+
+/* 배경 반짝임 효과 */
+@keyframes sparkle {
+  0%, 100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* 그림자 펄스 효과 */
+@keyframes shadowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  }
+  50% {
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
+  }
+}
